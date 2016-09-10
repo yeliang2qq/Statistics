@@ -1,0 +1,19 @@
+{
+"configs" : [
+  {
+"server" : "45.78.53.14",
+"server_port" : 443,
+"password" : "adadsa4611568",
+"method" : "aes-256-cfb",
+"remarks" : "adadsa"}
+
+],
+"strategy" : null,
+"index" : 0,
+"global" : false,
+"enabled" : true,
+"shareOverLan" : true,
+"isDefault" : false,
+"localPort" : 1080,
+"pacUrl" : null,
+"useOnlinePac" : false}

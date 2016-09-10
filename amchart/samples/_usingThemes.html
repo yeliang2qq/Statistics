@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>amCharts examples</title>
+        <script src="../amcharts/amcharts.js" type="text/javascript"></script>
+        <script src="../amcharts/pie.js" type="text/javascript"></script>
+        <script>
+
+
+        var chart1;
+        var chart2;
+
+        makeCharts("light", "#FFFFFF");
+        function makeCharts(theme, bgColor, bgImage) {
+            // if (chart1) {
+            //     chart1.clear();
+            // }
+            // if (chart2) {
+            //     chart2.clear();
+            // }
+            // // background
+            // if (document.body) {
+            //     document.body.style.backgroundColor = bgColor;
+            //     document.body.style.backgroundImage = "url(" + bgImage + ")";
+            // }
+
+            chart1 = AmCharts.makeChart("chartdiv1", {
+                type: "pie",
+                dataProvider: [{
+                    "country": "现金",
+                    "litres": 9.6
+                }, {
+                    "country": "唐宝",
+                    "litres": 19.3
+                }, {
+                    "country": "余额",
+                    "litres": 9.6
+                }, {
+                    "country": "基金",
+                    "litres": 9.7
+                }, {
+                    "country": "其他",
+                    "litres": 3.2
+                }, {
+                    "country": "支付宝",
+                    "litres": 47.9
+                }],
+
+                titleField: "country",
+                valueField: "litres",
+                //balloonText: "[[title]]<br><b>[[value]]</b> ([[percents]]%)",
+                // legend: {
+                //     align: "center",
+                //     markerType: "circle"
+                // }
+            });
+
+            chart2 = AmCharts.makeChart("chartdiv2", {
+                type: "pie",
+                dataProvider: [{
+                    "country": "现金",
+                    "litres": 9.6
+                }, {
+                    "country": "唐宝",
+                    "litres": 19.3
+                }, {
+                    "country": "余额",
+                    "litres": 9.6
+                }, {
+                    "country": "基金",
+                    "litres": 9.7
+                }, {
+                    "country": "其他",
+                    "litres": 3.2
+                }, {
+                    "country": "支付宝",
+                    "litres": 47.9
+                }],
+
+                titleField: "country",
+                valueField: "litres",
+                //balloonText: "[[title]]<br><b>[[value]]</b> ([[percents]]%)",
+                // legend: {
+                //     align: "center",
+                //     markerType: "circle"
+                // }
+            });
+
+        }
+
+
+        </script>
+    </head>
+
+    <body style="font-size:15px;">
+        <div id="chartdiv1" style="width: 550px; height: 300px; float:left"></div>
+        <div id="chartdiv2" style="width: 550px; height: 300px; float:left"></div>
+    </body>
+
+</html>
